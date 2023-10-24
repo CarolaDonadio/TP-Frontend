@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="tickets.css">
+    <link rel="stylesheet" href="style.css">
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!--================== BOOTSTRAP =====================-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+<body>
+    <!--==================== NAVAR ===================-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-center">
+            <a class="navbar-brand text-light" href="#">Conf Bs As</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarSupportedContent"> <!--class="collapse navbar-collapse"-->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-secondary" aria-current="page" href="index.html">La Conferencia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary"  href="index.html">Los oradores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary"  href="index.html">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary"  href="index.html">Conviértete en orador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success"  href="tickets.html">Comprar tickets</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <!--======================= CARDS =========================-->
+    <div class="container p-3 mt-2"> <!--mt-2-->
+        <div class="row g-1 justify-content-lg-center columna-cards">
+            <div class="col-lg-3 columna-card">
+              <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Estudiante</h5>
+                  <h6 class="card-title">80%</h6>
+                  <p class="card-text">Tiene un descuento</p>
+                  <p class="card-text text-black-50">*presentar documentación</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 columna-card">
+              <div class="card border-info mb-3" style="max-width: 18rem;">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Trainee</h5>
+                  <p class="card-text">Tiene un descuento</p>
+                  <h6 class="card-title">50%</h6>
+                  <p class="card-text text-black-50">*presentar documentación</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 columna-card">
+              <div class="card border-warning mb-3" style="max-width: 18rem;">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Junior</h5>
+                  <p class="card-text">Tiene un descuento</p>
+                  <h6 class="card-title">15%</h6>
+                  <p class="card-text text-black-50">*presentar documentación</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!--======================= TICKETS FORM =========================-->
+    <div class="container pb-3">
+      <div class="row g-4">
+        <div class="row p-2 px-2">
+          <p class="text-center parrafo texto-contactform">VENTA</p>
+          <h2 class="text-center">VALOR DE TICKET $200</h2>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row justify-content-lg-center">
+          <div class="col-12 col-lg-9">
+            <div class="overflow-hidden">
+              <form action="#!">
+                <div class="row gy-4">
+                  <div class="col-12 col-md-6">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="formulario" placeholder="Nombre">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="formulario" placeholder="Apellido">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group">
+                      <input type="email" class="form-control" id="formulario" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6" id="nombre-form">
+                    <label for="cantidadEntrada" class="form-label">Cantidad</label>
+                    <div class="input-group">
+                        <input id="cantidadEntrada" min="1" type="number" class="form-control" placeholder="Cantidad">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="categoria" class="form-label">Categoría</label>
+                    <select id="categoria" class="form-select"> <!-- id="disabledSelect"-->
+                      <option value="estudiante" selected>Estudiante</option>
+                      <option value="trainee">Trainee</option>
+                      <option value="junior">Junior</option>
+                    </select>
+                  </div>
+                  <fieldset disabled class="form">
+                    <div class="mb-3" id="total">
+                      <!--<input type="text" id="disabledTextInput" id="textoTotal" class="form-control" placeholder="Total a Pagar: $"><span id="totalCompra"></span>-->
+                      <div class="alert alert-primary" role="alert">Total a Pagar: $ <span id="totalCompra"></span></div>     
+                    </div>
+                  </fieldset>
+                  <div class="col-12 col-md-6 form" id="btn-form">
+                    <div class="d-grid">
+                      <button class="btn color-button-send btn-lg text-light" type="reset" id="borrar" onclick="borrarCompra()">Borrar</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 form" id="btn-form">
+                    <div class="d-grid">
+                      <button type="button" class="btn color-button-send btn-lg text-light" id="calcular" onclick="descuento()">Resumen</button>
+                    </div>
+                  </div>
+                </div>
+              </form>  
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--======================= FOOTER =========================-->
+    <footer class="text-center text-white">
+      <div class="container mt-3">
+          <div class="row d-flex justify-content-center align-items-center p-3">
+            <div class="col-md-1">
+              <p class="mb-0">
+                <a href="#" class="text-white texto-contactform">Preguntas <br> frecuentes</a>
+              </p>
+            </div>
+            <div class="col-md-2">
+              <p class="mb-0">
+                <a href="#" class="text-white texto-contactform">Contáctanos</a>
+              </p>
+            </div>
+            <div class="col-md-1">
+              <p class="mb-0">
+                <a href="#" class="text-white texto-contactform">Prensa</a>
+              </p>
+            </div>
+            <div class="col-md-2">
+              <p class="mb-0">
+                <a href="#" class="text-white texto-contactform">Conferencias</a>
+              </p>
+            </div>
+            <div class="col-md-1">
+              <p class="mb-0">
+                <a href="#" class="text-white texto-contactform">Términos y <br> condiciones</a>
+              </p>
+            </div>
+            <div class="col-md-2">
+              <p class="mb-0">
+                <a href="#" class="text-white texto-contactform">Privacidad</a>
+              </p>
+            </div>
+            <div class="col-md-1">
+              <p class="mb-0">
+                <a href="#" class="text-white texto-contactform">Estudiantes</a>
+              </p>
+            </div>
+          </div>
+      </div>
+    </footer>
+  <script src="tickets.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

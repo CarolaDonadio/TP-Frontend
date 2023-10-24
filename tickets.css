@@ -5,19 +5,16 @@
     text-decoration: none !important;
 }
 
-.navbar, .honolulu {
-    background-color: #353A40;
-}
-
-.navbar .nav-link:hover {
-    color: #f8f9fa !important;
-}
-
 .container-fluid {
     /*--bs-gutter-x: 0;*/
     padding-right: 0 !important; /*12px*/
     padding-left: 0 !important;
 }
+
+.card {
+    border-radius: 0 !important;
+}
+
 
 .card-imageintro {
     position: relative;
@@ -46,7 +43,7 @@
     font-size: 1.1rem !important;
 }
 
-.col-md-6 p {
+.text-black-50 {
     font-size: smaller;
 }
 
@@ -60,11 +57,11 @@
     margin-bottom: 0;
 }
 
-.subrayado-puntos {
+/*.subrayado-puntos {
     border-bottom: 2px dotted #000;
     text-decoration:none;
     color: #000;
-}
+}*/
 
 /*.gy-xl-5 {
     --bs-gutter-y: 1rem;
@@ -72,6 +69,10 @@
 
 .color-button-send {
     background-color: #96C93E !important;
+}
+
+.btn, .btn-lg {
+    font-size: 16px !important; 
 }
 
 .texto-contactform {
@@ -84,7 +85,7 @@ footer {
 
 
 
-@media (min-width: 901px) {
+/*@media (min-width: 901px) {
     .container-texto {
         margin-top: 140px;
         margin-right: 90px;
@@ -105,5 +106,11 @@ footer {
         margin-top: 20px;
         margin-right: 0;
         padding-left: 0;
+    }
+}*/
+
+@media (min-width: 1200px) {
+    .col-lg-3 {
+        width: 18% !important;
     }
 }
